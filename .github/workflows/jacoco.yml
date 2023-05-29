@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: 11
       - name: Run Coverage
-        run: mvn -b test -f maven-code-coverage/pom.xml
+        run: mvn -B test -f maven-code-coverage/pom.xml
       - name: Add coverage to PR
         id: jacoco
         uses: madrapps/jacoco-report@v1.3
